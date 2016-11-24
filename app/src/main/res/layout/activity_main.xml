@@ -37,11 +37,12 @@
         android:layout_alignStart="@+id/send_button">
 
         <Button
-            android:text="Button"
+            android:text="LogIn"
             android:layout_height="wrap_content"
-            android:id="@+id/button"
+            android:id="@+id/loginButton"
             android:layout_weight="1"
-            android:layout_width="wrap_content" />
+            android:layout_width="wrap_content"
+            android:onClick="loginButtonOnclick"/>
 
         <EditText
             android:layout_height="wrap_content"

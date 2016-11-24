@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.yair.helloandroid.R;
-import com.yair.helloandroid.entities.Person;
+import com.yair.helloandroid.model.entities.Person;
 
 public class personActivity extends AppCompatActivity {
 

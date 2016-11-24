@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.yair.helloandroid.R;
-import com.yair.helloandroid.entities.Person;
+import com.yair.helloandroid.model.entities.Person;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -68,5 +68,10 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
+    }
+
+    public void loginButtonOnclick(View view) {
+        Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+        startActivity(intent);
     }
 }

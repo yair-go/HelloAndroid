@@ -1,4 +1,4 @@
-package com.yair.helloandroid.entities;
+package com.yair.helloandroid.model.entities;
 
 import java.io.Serializable;
 
