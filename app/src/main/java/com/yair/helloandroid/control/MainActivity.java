@@ -4,16 +4,16 @@ package com.yair.helloandroid.control;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.yair.helloandroid.R;
+import com.yair.helloandroid.model.Const;
 import com.yair.helloandroid.model.entities.Person;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -62,7 +62,8 @@ public class MainActivity extends AppCompatActivity {
                     p.setName(et.getText().toString());
 
                     Intent intent = new Intent(MainActivity.this,personActivity.class);
-                    intent.putExtra("Person",p);
+                    //intent.putExtra("Person",p);
+                    intent.putExtra(Const.Person_KEY,p);
                     startActivity(intent);
                 }
             });
